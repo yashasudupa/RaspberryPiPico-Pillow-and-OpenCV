@@ -1,0 +1,32 @@
+sudo python3 UART_Host_to_uc.py --help
+[sudo] password for yashasudupa: 
+Detected port : /dev/ttyACM0
+Enter the value in the format : angle deg. e.g: 45 deg = +45, -45 deg = -45 
++85 deg
+3
+Sending angle: +85 deg
+Value is sent to the device
+Enter the value in the format : angle deg. e.g: 45 deg = +45, -45 deg = -45 
+-85 deg
+3
+Sending angle: -85 deg
+Value is sent to the device
+Enter the value in the format : angle deg. e.g: 45 deg = +45, -45 deg = -45 
+2133141343
+-1
+Invalid input, Re-enter the value in the format : angle deg.
+Enter the value in the format : angle deg. e.g: 45 deg = +45, -45 deg = -45 
+45.5 deg
+4
+Invalid input. Float values cannot be provided. Re-enter the value in the format angle deg.
+Enter the value in the format : angle deg. e.g: 45 deg = +45, -45 deg = -45 
+181 deg
+3
+Sending angle: 181 deg
+Value is sent to the device
+Enter the value in the format : angle deg. e.g: 45 deg = +45, -45 deg = -45 
+-213 deg
+4
+Sending angle: -213 deg
+Value is sent to the device
+Enter the value in the format : angle deg. e.g: 45 deg = +45, -45 deg = -45 

@@ -1,0 +1,66 @@
+>>> %Run -c $EDITOR_CONTENT
+
+MPY: soft reboot
+dir_pin value is 0
+angle_to_step_per_revolution_conversion - steps_per_revolution_result :  1777.778
+main : home angle 100
+pin_A_plus value is 1
+pin_Z_plus value is 1
+pin_Z_minus value is 0
+pin_B_plus value is 0
+pin_A_minus value is 0
+pin_B_minus value is 0
+loop : Entered inside while loop
+UART_uc_to_Host::waiting_for_input
+UART_uc_to_Host::wait_for_input - angle_str, unit_marker +85 deg
+loop : angle 85
+dir_pin value is 0
+angle_to_step_per_revolution_conversion - steps_per_revolution_result :  1511.111
+pin_fault value is 0
+pin_A_plus value is 1
+pin_Z_plus value is 1
+pin_Z_minus value is 0
+pin_B_plus value is 0
+pin_A_minus value is 0
+pin_B_minus value is 0
+loop : Entered inside while loop
+UART_uc_to_Host::waiting_for_input
+UART_uc_to_Host::wait_for_input - angle_str, unit_marker -85 deg
+loop : angle -85
+dir_pin value is 1
+angle_to_step_per_revolution_conversion - steps_per_revolution_result :  1511.111
+pin_fault value is 0
+pin_A_plus value is 1
+pin_Z_plus value is 1
+pin_Z_minus value is 0
+pin_B_plus value is 0
+pin_A_minus value is 0
+pin_B_minus value is 0
+loop : Entered inside while loop
+UART_uc_to_Host::waiting_for_input
+UART_uc_to_Host::wait_for_input - angle_str, unit_marker 181 deg
+loop : angle 181
+dir_pin value is 0
+angle_to_step_per_revolution_conversion - steps_per_revolution_result :  3217.778
+pin_fault value is 0
+pin_A_plus value is 1
+pin_Z_plus value is 1
+pin_Z_minus value is 0
+pin_B_plus value is 0
+pin_A_minus value is 0
+pin_B_minus value is 0
+loop : Entered inside while loop
+UART_uc_to_Host::waiting_for_input
+UART_uc_to_Host::wait_for_input - angle_str, unit_marker -213 deg
+loop : angle -213
+dir_pin value is 1
+angle_to_step_per_revolution_conversion - steps_per_revolution_result :  3786.667
+pin_fault value is 0
+pin_A_plus value is 1
+pin_Z_plus value is 1
+pin_Z_minus value is 0
+pin_B_plus value is 0
+pin_A_minus value is 0
+pin_B_minus value is 0
+loop : Entered inside while loop
+UART_uc_to_Host::waiting_for_input
