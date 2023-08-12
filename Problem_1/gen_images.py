@@ -3,15 +3,15 @@
 Program is written to generate non-overlapping output images as stated in problem statement:
 i) Read N images from the input folder. 
 ii) Generated M x M pixel output images which have a distribution of all the shapes in it.
-iii) A given output image contained k images of each type. 
-iv) K is compute k based on the input image sizes and M. Please refer TODO1 to understand about the 
+iii) A given output image contained k*k images of each type. 
+iv) K is computed based on the input image sizes and M*M. Please refer TODO1 to understand about the 
 logic that i used to calculate K
 v) Each shape is placed at a random position within the image, without getting
-cut off at the boundary.
-vi) Each shape is scaled of 0.75.
+cut.
+vi) Each shape is randomly scaled between 0.75 and 1.
 viii) Image shape is rotated randomly between 0 and 90 degrees.
-ix) Support required command line arguments (see below) for the program. Error checking is added as well.
-x) Boundary conditions are added to avoid overlapping maxinmum
+ix) Support required command line arguments is added (see below) for the program. Error checking is added as well.
+x) Boundary conditions are added to avoid overlapping of images
 """
 import cv2 as cv
 import numpy as np
