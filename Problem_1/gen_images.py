@@ -164,7 +164,7 @@ def add_obj(positions, img, pixel_x, pixel_y):
 
     Since, there are 4 shapes that are present of size 50 * 50,
     value of K would be 19 * 19 / 4 = 90."""
-    K = 19
+    K = 19*19
     
     shape_width, shape_height = img.size
 
@@ -178,7 +178,7 @@ def add_obj(positions, img, pixel_x, pixel_y):
     img = img.resize((50, 50))
 
     for i in range(0, K):
-        print(i, "th iteration")
+        #print(i, "th iteration")
         x = random.randint(0, max_x)
         y = random.randint(0, max_y)
 
@@ -189,7 +189,7 @@ def add_obj(positions, img, pixel_x, pixel_y):
 
 # Defining main function
 def main(args):
-    print('Enter python gen_images.py to know more about the input format \n')
+    #print('Enter python gen_images.py to know more about the input format \n')
 
     #Parse the arguments from the user
     input_folder = args.input
@@ -227,19 +227,19 @@ def main(args):
     
     for i in range(0, num_images):
         positions = add_obj(positions, cropped_prism_img, image_dimensions[0], image_dimensions[1])
-        print("Finished 1st execution and positions size", len(positions))
+        #print("Finished 1st execution and positions size", len(positions))
         positions = add_obj(positions, cropped_cube_img, image_dimensions[0], image_dimensions[1])
-        print("Finished 2nd execution and positions size", len(positions))
+        #print("Finished 2nd execution and positions size", len(positions))
         positions = add_obj(positions, cropped_dodecahedon_img, image_dimensions[0], image_dimensions[1])
-        print("Finished 3rd execution and positions size", len(positions))
+        #print("Finished 3rd execution and positions size", len(positions))
         positions = add_obj(positions, cropped_rectangle_img, image_dimensions[0], image_dimensions[1])
-        print("Finished last execution and positions size", len(positions))
+        #print("Finished last execution and positions size", len(positions))
 
         try :
-            plt.figure(figsize=(15, 15))
+            fig = plt.figure(figsize=(15, 15))
             cv.imshow('Problem 1', cv.UMat(bg))
             cv.imwrite(output_folder +"/Output_Image_" + str(i) + ".png", bg)
-
+            plt.close(fig)
         except cv.error as e:
             print('An Exception Occurred')
             print('Exception Details ->', e)
