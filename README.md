@@ -1,5 +1,4 @@
-# Achira_Labs
-Achira_assessments
+# RPI programming to interface with Stepper Motor and generation of non-overlapping shapes in the background image.
 
 Problem 1 - gen_images.py:
 
